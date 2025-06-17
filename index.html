@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- Favicon -->
+     <link rel="icon" href="https://fav.farm/👓" />
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>Todo Dashboard</h1>
+        <p>Manage Your Tasks With Style</p>
+    </header>
+
+    <!-- All tasks section -->
+    <section class="all-tasks">
+
+        <!-- Total tasks -->
+        <div class="total-tasks tcp">
+            <button>
+                <img src="./assets/54066_notes_icon.png" alt="notes" width="30">
+            </button>
+
+            <div>
+                <p>Total Tasks</p>
+                <p class="number-of-tasks" id="total-tasks">0</p>
+            </div>
+
+        </div>
+
+        <!-- Completed tasks -->
+        <div class="completed tcp">
+            <button>
+                <img src="./assets/8665019_check_mark_icon.png" alt="completed" width="26">
+            </button>
+
+            <div>
+                <p>Completed</p>
+                <p class="completed-tasks" id="completed-tasks">0</p>
+            </div>
+        </div>
+
+        <!-- Pending tasks -->
+        <div class="pending tcp">
+            <button>
+                <img src=".\assets\34227_clock_history_hourglass_pending_time_icon.png" alt="pending" width="30">
+            </button>
+
+            <div>
+                <p>Pending</p>
+                <p class="pending-tasks" id="pending-tasks">0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add New Task -->
+    <section class="add-task">
+
+        <div class="addNewTask">
+
+            <div class="add">
+                <button>
+                    <img src="./assets/9023881_plus_fill_icon.svg" alt="plus icon" width="20">
+                </button>
+                <h2>Add New Task</h2>
+            </div>
+
+            <div class="input-add">
+                <input type="text" placeholder="What needs to be done?" id="task-input">
+                <button class="add-new" onclick="addTask()">
+                    <img src="./assets/9165747_send_mail_icon.svg" alt="send icon" width="22">
+                   <p>Add Task</p>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tasks section -->
+    <section class="your-tasks">
+
+        <div class="all-tasks">
+            <h3>Your Tasks</h3>
+
+            <ul id="task-list">
+    
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
