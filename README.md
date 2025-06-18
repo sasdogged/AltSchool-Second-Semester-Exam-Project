@@ -10,8 +10,8 @@ I built this as a replica to a ReactJS application that we were assigned to buil
 
 ## 📌 Features
 
-🆕 Add your own tasks (stored in `localStorage`)
-📄Number of Total, Completed and Pending Tasks are shown
-🎨 Clean, responsive design.
- Able to mark tasks as completed.
+*🆕 Add your own tasks (stored in `localStorage`)
+*📄Number of Total, Completed and Pending Tasks are shown
+*🎨 Clean, responsive design.
+ *Able to mark tasks as completed.
 
